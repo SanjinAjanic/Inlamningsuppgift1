@@ -12,34 +12,35 @@ namespace Inlämningsuppgift1
             string op = Console.ReadLine();
 
 
-
             Console.Write("Enter a number:");
-            double num1 = Convert.ToDouble(Console.ReadLine());
-
+            double num1 = Convert.ToInt32(Console.ReadLine());
 
 
             Console.Write("Enter second number:");
             double num2 = Convert.ToDouble(Console.ReadLine());
 
+            double result;
+
+
             if (op == "+")
             {
-                Console.WriteLine(num1 + num2);
+                Console.WriteLine("Resultatet är: " + (result = num1 + num2) + " (" + num1 + "+" + num2 + ")");
             }
             else if (op == "-")
             {
-                Console.WriteLine(num1 - num2);
+                Console.WriteLine("Resultatet är: " + (result = num1 - num2) + " (" + num1 + "-" + num2 + ")");
             }
             else if (op == "/")
             {
-                Console.WriteLine(num1 / num2);
+                Console.WriteLine("Resultatet är: " + (result = num1 / num2) + " (" + num1 + "/" + num2 + ")");
             }
             else if (op == "*")
             {
-                Console.WriteLine(num1 * num2);
+                Console.WriteLine("Resultatet är: " + (result = num1 * num2) + " (" + num1 + "*" + num2 + ")");
             }
 
 
-            
+            Console.WriteLine(op + num1 + num2 );
 
 
 
