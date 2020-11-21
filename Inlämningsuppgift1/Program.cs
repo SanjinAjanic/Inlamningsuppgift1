@@ -9,11 +9,13 @@ namespace Inlämningsuppgift1
         {
 
             Console.Write("Enter a Operator:");
-            string op = Console.ReadLine();
+            string op1 = Console.ReadLine();
 
+            Console.Write("Enter secound Operator:");
+            string op2 = Console.ReadLine();
 
             Console.Write("Enter a number:");
-            double num1 = Convert.ToInt32(Console.ReadLine());
+            double num1 = Convert.ToDouble(Console.ReadLine());
 
 
             Console.Write("Enter second number:");
@@ -22,25 +24,43 @@ namespace Inlämningsuppgift1
             double result;
 
 
-            if (op == "+")
+            if (op1 == "+")
             {
                 Console.WriteLine("Resultatet är: " + (result = num1 + num2) + " (" + num1 + "+" + num2 + ")");
             }
-            else if (op == "-")
+            else if (op1 == "-")
             {
-                Console.WriteLine("Resultatet är: " + (result = num1 - num2) + " (" + num1 + "-" + num2 + ")");
+                Console.WriteLine("Resultatet är: " +  (result = num1 - num2) + " (" + num1 + "-" + num2 + ")");
             }
-            else if (op == "/")
+            else if (op1 == "/")
             {
                 Console.WriteLine("Resultatet är: " + (result = num1 / num2) + " (" + num1 + "/" + num2 + ")");
             }
-            else if (op == "*")
+            else if (op1 == "*")
             {
                 Console.WriteLine("Resultatet är: " + (result = num1 * num2) + " (" + num1 + "*" + num2 + ")");
             }
+           
+            if (op2 == "+")
+            {
+                Console.WriteLine("Resultatet är: " + (result = num1 + num2) + " (" + num1 + "+" + num2 + ")");
+            }
+            else if (op2 == "-")
+            {
+                Console.WriteLine("Resultatet är: " + (result = num1 - num2) + " (" + num1 + "-" + num2 + ")");
+            }
+            else if (op2 == "/")
+            {
+                Console.WriteLine("Resultatet är: " + (result = num1 / num2) + " (" + num1 + "/" + num2 + ")");
+            }
+            else if (op2 == "*")
+            {
+                Console.WriteLine("Resultatet är: " + (result = num1 * num2) + " (" + num1 + "*" + num2 +  ")");
+            }
 
 
-            Console.WriteLine(op + num1 + num2 );
+
+            Console.WriteLine(op1 + op2 + num1 + num2 );
 
 
 
