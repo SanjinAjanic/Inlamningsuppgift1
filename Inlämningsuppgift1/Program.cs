@@ -11,6 +11,8 @@ namespace Inlämningsuppgift1
 
              
             Console.Title = "Sanjin Inlämningsuppgift1";
+            Console.BackgroundColor
+           = ConsoleColor.Blue;
 
 
             List<double> result = new List<double>();
