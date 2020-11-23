@@ -8,6 +8,11 @@ namespace Inlämningsuppgift1
     {
         static void Main(string[] args)
         {
+
+             
+            Console.Title = "Sanjin Inlämningsuppgift1";
+
+
             List<double> result = new List<double>();
             int counter = default(int);
             bool quit = default(bool);
