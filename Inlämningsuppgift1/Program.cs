@@ -19,6 +19,7 @@ namespace Inlämningsuppgift1
             int counter = default(int);
             bool quit = default(bool);
 
+
             do
             {
 
@@ -42,8 +43,13 @@ namespace Inlämningsuppgift1
                     double num1 = Convert.ToDouble(Console.ReadLine());
 
 
+
+
                     Console.Write("Enter second number:");
                     double num2 = Convert.ToDouble(Console.ReadLine());
+
+
+                    
 
 
 
@@ -53,6 +59,8 @@ namespace Inlämningsuppgift1
                         counter = result.Count - 1;
 
                         Console.WriteLine("{0} {1} {2} = {3}", num1, op1, num2, result[counter]);
+
+
                     }
                     else if (op1 == "-")
                     {
@@ -74,25 +82,52 @@ namespace Inlämningsuppgift1
                         counter = result.Count - 1;
 
                         Console.WriteLine("{0} {1} {2} = {3}", num1, op1, num2, result[counter]);
+
                     }
+
+                  
+
 
 
                 }
                 Console.ReadLine();
 
             } while (!quit);
+
            
             double totalSum = 0;
             foreach (var item in result)
             {
                 totalSum += item;
             }
-
-            Console.WriteLine(totalSum + " Är summan av dina beräkningar");
-
+          
             
+            if (totalSum < 100)
+            {
+                Console.WriteLine("Less then a hundred");
+            }
+            else if (totalSum > 100)
+            {
+                Console.WriteLine("More then a hundred");
+            }
+            else if (totalSum == 100)
+            {
+                Console.WriteLine("Cool, now you have a hundred, clap clap");
+            }
 
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
